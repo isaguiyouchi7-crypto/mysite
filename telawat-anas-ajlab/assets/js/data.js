@@ -1,0 +1,185 @@
+/* =========================================================
+   data.js — بيانات الموقع (لا Back-End)
+   ========================================================= */
+
+window.SITE = {
+  name: "تلاوات أنس أجلاب",
+  reciterBioShort: "تلاوات قرآنية ومقاطع قصيرة بروحٍ هادئة.",
+  contactEmail: "anasjlab8@gmail.com",
+  socialLinks: {
+    youtube: "#",
+    facebook: "https://www.facebook.com/anasjlab24.5?locale=ar_AR",
+    instagram: "https://www.instagram.com/isa_yoichi/"
+  }
+};
+
+/* السور */
+window.SURAHS = [
+  { number: 1, name: "الفاتحة", audio: "assets/audio/surahs/001.mp3" },
+  { number: 2, name: "البقرة", audio: "assets/audio/surahs/002.mp3" },
+  { number: 3, name: "آل عمران", audio: "assets/audio/surahs/003.mp3" },
+  { number: 4, name: "النساء", audio: "assets/audio/surahs/004.mp3" },
+  { number: 5, name: "المائدة", audio: "assets/audio/surahs/005.mp3" },
+  { number: 6,  name: "الأنعام",        audio: "assets/audio/surahs/006.mp3" },
+  { number: 7,  name: "الأعراف",        audio: "assets/audio/surahs/007.mp3" },
+  { number: 8,  name: "الأنفال",        audio: "assets/audio/surahs/008.mp3" },
+  { number: 9,  name: "التوبة",         audio: "assets/audio/surahs/009.mp3" },
+  { number: 10, name: "يونس",           audio: "assets/audio/surahs/010.mp3" },
+  { number: 11, name: "هود",            audio: "assets/audio/surahs/011.mp3" },
+  { number: 12, name: "يوسف",           audio: "assets/audio/surahs/012.mp3" },
+  { number: 13, name: "الرعد",          audio: "assets/audio/surahs/013.mp3" },
+  { number: 14, name: "إبراهيم",        audio: "assets/audio/surahs/014.mp3" },
+  { number: 15, name: "الحجر",          audio: "assets/audio/surahs/015.mp3" },
+  { number: 16, name: "النحل",          audio: "assets/audio/surahs/016.mp3" },
+  { number: 17, name: "الإسراء",        audio: "assets/audio/surahs/017.mp3" },
+  { number: 18, name: "الكهف",          audio: "assets/audio/surahs/018.mp3" },
+  { number: 19, name: "مريم",           audio: "assets/audio/surahs/019.mp3" },
+  { number: 20, name: "طه",             audio: "assets/audio/surahs/020.mp3" },
+  { number: 21, name: "الأنبياء",       audio: "assets/audio/surahs/021.mp3" },
+  { number: 22, name: "الحج",           audio: "assets/audio/surahs/022.mp3" },
+  { number: 23, name: "المؤمنون",       audio: "assets/audio/surahs/023.mp3" },
+  { number: 24, name: "النور",          audio: "assets/audio/surahs/024.mp3" },
+  { number: 25, name: "الفرقان",        audio: "assets/audio/surahs/025.mp3" },
+  { number: 26, name: "الشعراء",        audio: "assets/audio/surahs/026.mp3" },
+  { number: 27, name: "النمل",          audio: "assets/audio/surahs/027.mp3" },
+  { number: 28, name: "القصص",          audio: "assets/audio/surahs/028.mp3" },
+  { number: 29, name: "العنكبوت",       audio: "assets/audio/surahs/029.mp3" },
+  { number: 30, name: "الروم",          audio: "assets/audio/surahs/030.mp3" },
+  { number: 31, name: "لقمان",          audio: "assets/audio/surahs/031.mp3" },
+  { number: 32, name: "السجدة",         audio: "assets/audio/surahs/032.mp3" },
+  { number: 33, name: "الأحزاب",        audio: "assets/audio/surahs/033.mp3" },
+  { number: 34, name: "سبأ",            audio: "assets/audio/surahs/034.mp3" },
+  { number: 35, name: "فاطر",           audio: "assets/audio/surahs/035.mp3" },
+  { number: 36, name: "يس",             audio: "assets/audio/surahs/036.mp3" },
+  { number: 37, name: "الصافات",        audio: "assets/audio/surahs/037.mp3" },
+  { number: 38, name: "ص",              audio: "assets/audio/surahs/038.mp3" },
+  { number: 39, name: "الزمر",          audio: "assets/audio/surahs/039.mp3" },
+  { number: 40, name: "غافر",           audio: "assets/audio/surahs/040.mp3" },
+  { number: 41, name: "فصلت",           audio: "assets/audio/surahs/041.mp3" },
+  { number: 42, name: "الشورى",         audio: "assets/audio/surahs/042.mp3" },
+  { number: 43, name: "الزخرف",         audio: "assets/audio/surahs/043.mp3" },
+  { number: 44, name: "الدخان",         audio: "assets/audio/surahs/044.mp3" },
+  { number: 45, name: "الجاثية",        audio: "assets/audio/surahs/045.mp3" },
+  { number: 46, name: "الأحقاف",        audio: "assets/audio/surahs/046.mp3" },
+  { number: 47, name: "محمد",           audio: "assets/audio/surahs/047.mp3" },
+  { number: 48, name: "الفتح",          audio: "assets/audio/surahs/048.mp3" },
+  { number: 49, name: "الحجرات",        audio: "assets/audio/surahs/049.mp3" },
+  { number: 50, name: "ق",              audio: "assets/audio/surahs/050.mp3" },
+  { number: 51, name: "الذاريات",       audio: "assets/audio/surahs/051.mp3" },
+  { number: 52, name: "الطور",          audio: "assets/audio/surahs/052.mp3" },
+  { number: 53, name: "النجم",          audio: "assets/audio/surahs/053.mp3" },
+  { number: 54, name: "القمر",          audio: "assets/audio/surahs/054.mp3" },
+  { number: 55, name: "الرحمن",         audio: "assets/audio/surahs/055.mp3" },
+  { number: 56, name: "الواقعة",        audio: "assets/audio/surahs/056.mp3" },
+  { number: 57, name: "الحديد",         audio: "assets/audio/surahs/057.mp3" },
+  { number: 58, name: "المجادلة",       audio: "assets/audio/surahs/058.mp3" },
+  { number: 59, name: "الحشر",          audio: "assets/audio/surahs/059.mp3" },
+  { number: 60, name: "الممتحنة",       audio: "assets/audio/surahs/060.mp3" },
+  { number: 61, name: "الصف",           audio: "assets/audio/surahs/061.mp3" },
+  { number: 62, name: "الجمعة",         audio: "assets/audio/surahs/062.mp3" },
+  { number: 63, name: "المنافقون",      audio: "assets/audio/surahs/063.mp3" },
+  { number: 64, name: "التغابن",        audio: "assets/audio/surahs/064.mp3" },
+  { number: 65, name: "الطلاق",         audio: "assets/audio/surahs/065.mp3" },
+  { number: 66, name: "التحريم",        audio: "assets/audio/surahs/066.mp3" },
+  { number: 67, name: "الملك",          audio: "assets/audio/surahs/067.mp3" },
+  { number: 68, name: "القلم",          audio: "assets/audio/surahs/068.mp3" },
+  { number: 69, name: "الحاقة",         audio: "assets/audio/surahs/069.mp3" },
+  { number: 70, name: "المعارج",        audio: "assets/audio/surahs/070.mp3" },
+  { number: 71, name: "نوح",            audio: "assets/audio/surahs/071.mp3" },
+  { number: 72, name: "الجن",           audio: "assets/audio/surahs/072.mp3" },
+  { number: 73, name: "المزمل",         audio: "assets/audio/surahs/073.mp3" },
+  { number: 74, name: "المدثر",         audio: "assets/audio/surahs/074.mp3" },
+  { number: 75, name: "القيامة",        audio: "assets/audio/surahs/075.mp3" },
+  { number: 76, name: "الإنسان",        audio: "assets/audio/surahs/076.mp3" },
+  { number: 77, name: "المرسلات",       audio: "assets/audio/surahs/077.mp3" },
+  { number: 78, name: "النبأ",          audio: "assets/audio/surahs/078.mp3" },
+  { number: 79, name: "النازعات",       audio: "assets/audio/surahs/079.mp3" },
+  { number: 80, name: "عبس",            audio: "assets/audio/surahs/080.mp3" },
+  { number: 81, name: "التكوير",        audio: "assets/audio/surahs/081.mp3" },
+  { number: 82, name: "الانفطار",       audio: "assets/audio/surahs/082.mp3" },
+  { number: 83, name: "المطففين",       audio: "assets/audio/surahs/083.mp3" },
+  { number: 84, name: "الانشقاق",       audio: "assets/audio/surahs/084.mp3" },
+  { number: 85, name: "البروج",         audio: "assets/audio/surahs/085.mp3" },
+  { number: 86, name: "الطارق",         audio: "assets/audio/surahs/086.mp3" },
+  { number: 87, name: "الأعلى",         audio: "assets/audio/surahs/087.mp3" },
+  { number: 88, name: "الغاشية",        audio: "assets/audio/surahs/088.mp3" },
+  { number: 89, name: "الفجر",          audio: "assets/audio/surahs/089.mp3" },
+  { number: 90, name: "البلد",          audio: "assets/audio/surahs/090.mp3" },
+  { number: 91, name: "الشمس",          audio: "assets/audio/surahs/091.mp3" },
+  { number: 92, name: "الليل",          audio: "assets/audio/surahs/092.mp3" },
+  { number: 93, name: "الضحى",          audio: "assets/audio/surahs/093.mp3" },
+  { number: 94, name: "الشرح",          audio: "assets/audio/surahs/094.mp3" },
+  { number: 95, name: "التين",          audio: "assets/audio/surahs/095.mp3" },
+  { number: 96, name: "العلق",          audio: "assets/audio/surahs/096.mp3" },
+  { number: 97, name: "القدر",          audio: "assets/audio/surahs/097.mp3" },
+  { number: 98, name: "البينة",         audio: "assets/audio/surahs/098.mp3" },
+  { number: 99, name: "الزلزلة",        audio: "assets/audio/surahs/099.mp3" },
+  { number: 100, name: "العاديات",      audio: "assets/audio/surahs/100.mp3" },
+  { number: 101, name: "القارعة",       audio: "assets/audio/surahs/101.mp3" },
+  { number: 102, name: "التكاثر",       audio: "assets/audio/surahs/102.mp3" },
+  { number: 103, name: "العصر",         audio: "assets/audio/surahs/103.mp3" },
+  { number: 104, name: "الهمزة",        audio: "assets/audio/surahs/104.mp3" },
+  { number: 105, name: "الفيل",         audio: "assets/audio/surahs/105.mp3" },
+  { number: 106, name: "قريش",          audio: "assets/audio/surahs/106.mp3" },
+  { number: 107, name: "الماعون",       audio: "assets/audio/surahs/107.mp3" },
+  { number: 108, name: "الكوثر",        audio: "assets/audio/surahs/108.mp3" },
+  { number: 109, name: "الكافرون",      audio: "assets/audio/surahs/109.mp3" },
+  { number: 110, name: "النصر",         audio: "assets/audio/surahs/110.mp3" },
+  { number: 111, name: "المسد",         audio: "assets/audio/surahs/111.mp3" },
+  { number: 112, name: "الإخلاص",       audio: "assets/audio/surahs/112.mp3" },
+  { number: 113, name: "الفلق",         audio: "assets/audio/surahs/113.mp3" },
+  { number: 114, name: "الناس",        audio: "assets/audio/surahs/114.mp3" }
+];
+
+/* المقاطع القصيرة */
+window.CLIPS = [
+  {
+    title: "جزء يسير من سورة الصافات",
+    audio: "assets/audio/clips/clip-01.mp3",
+    date: "2025-12-01",
+    duration: "01:12"
+  },
+  {
+    title: "جزء ثاني من سورة الصافات",
+    audio: "assets/audio/clips/clip-02.mp3",
+    date: "2025-12-02",
+    duration: "00:58"
+  },
+  {
+    title: "آخر آيتين من سورة البقرة",
+    audio: "assets/audio/clips/clip-03.mp3",
+    date: "2025-12-03",
+    duration: "01:05"
+  },
+  {
+    title: "جزء يسير من سورة طه",
+    audio: "assets/audio/clips/clip-04.mp3",
+    date: "2025-12-04",
+    duration: "00:47"
+  },
+  {
+    title: "مقطع خشوع — آيات من سورة الأعراف",
+    audio: "assets/audio/clips/clip-05.mp3",
+    date: "2025-12-05",
+    duration: "01:30"
+  },
+  {
+    title: "مقطع خشوع — آيات من سورة طه",
+    audio: "assets/audio/clips/clip-06.mp3",
+    date: "2025-12-06",
+    duration: "01:10"
+  },
+  {
+    title: "مقطع خشوع — آيات من سورة الكهف",
+    audio: "assets/audio/clips/clip-07.mp3",
+    date: "2025-12-07",
+    duration: "01:18"
+  },
+  {
+    title: "مقطع قصير — خواتيم سورة طه",
+    audio: "assets/audio/clips/clip-08.mp3",
+    date: "2025-12-10",
+    duration: "00:42"
+  }
+];
+
