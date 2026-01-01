@@ -1,146 +1,0 @@
-<!doctype html>
-<html lang="ar" dir="rtl">
-
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>تلاوات أنس أجلاب</title>
-    <meta name="description" content="موقع تلاوات أنس أجلاب لنشر التلاوات القرآنية والمقاطع القصيرة بهدوء وخشوع." />
-
-    <!-- Google Fonts (تشتغل مع الإنترنت فقط) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;600;700&display=swap"
-        rel="stylesheet">
-
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="assets/css/style.css" />
-
-    <!-- تحسين تجربة التطبيق -->
-    <meta name="theme-color" content="#0f3d2e">
-</head>
-
-<body>
-
-    <a class="skip-link" href="#content">تخطي إلى المحتوى</a>
-
-    <!-- ===== Header / Navbar ===== -->
-    <header class="topbar">
-        <div class="container topbar__inner">
-
-            <div class="brand">
-                <span class="brand__logo" aria-hidden="true">۞</span>
-                <div class="brand__text">
-                    <strong class="brand__title">تلاوات أنس أجلاب</strong>
-                    <span class="brand__subtitle">سكونٌ يقرّب القلب</span>
-                </div>
-            </div>
-
-            <nav class="nav" aria-label="شريط التنقل">
-                <a class="nav__link is-active" href="index.html">الرئيسية</a>
-                <a class="nav__link" href="surahs.html">السور</a>
-                <a class="nav__link" href="clips.html">المقاطع القصيرة</a>
-                <a class="nav__link" href="about.html">نبذة</a>
-                <a class="nav__link" href="contact.html">تواصل</a>
-            </nav>
-
-            <!-- زر الوضع الليلي (قد لا يوجد في صفحات أخرى) -->
-            <button class="btn btn--ghost" id="themeToggle" type="button" aria-label="تبديل الوضع الليلي">
-                <span aria-hidden="true">🌙</span>
-                <span class="btn__text">الوضع الليلي</span>
-            </button>
-
-        </div>
-    </header>
-
-    <!-- ===== Main Content ===== -->
-    <main id="content" class="container page page--home" data-page="home">
-
-        <!-- ===== Hero Section ===== -->
-        <section class="hero">
-
-            <div class="hero__card hero__card--with-image">
-
-                <h1 class="hero__title hero__title--with-avatar">
-                    <img src="assets/images/anas.webp" alt="أنس أجلاب" class="inline-avatar" loading="lazy" />
-                    <span>مرحبًا بك في تلاوات أنس أجلاب</span>
-                </h1>
-
-                <p class="hero__text">
-                    مساحة هادئة لنشر التلاوات القرآنية والمقاطع الصوتية القصيرة،
-                    بروحٍ يسودها الخشوع والتدبّر، نسأل الله القبول والإخلاص.
-                </p>
-
-                <div class="hero__actions">
-                    <a class="btn btn--primary" href="surahs.html">تصفح السور</a>
-                    <a class="btn" href="clips.html">المقاطع القصيرة</a>
-                </div>
-
-            </div>
-
-            <!-- آخر تلاوة -->
-            <aside class="hero__aside" aria-label="آخر تلاوة مضافة">
-                <div class="card">
-                    <div class="card__head">
-                        <h2 class="card__title">آخر تلاوة مضافة</h2>
-                        <p class="card__subtitle">تُعرض تلقائيًا من محتوى الموقع</p>
-                    </div>
-
-                    <!-- هذا العنصر مهم لـ JS -->
-                    <div id="latestRecitation" class="card__body skeleton">
-                        <!-- يتم ملؤه عبر JavaScript -->
-                    </div>
-                </div>
-            </aside>
-
-        </section>
-
-        <!-- ===== روابط سريعة ===== -->
-        <section class="section">
-            <div class="section__head">
-                <h2 class="section__title">أقسام الموقع</h2>
-                <p class="section__subtitle">انتقل مباشرة إلى ما تريد الاستماع إليه</p>
-            </div>
-
-            <div class="grid grid--3">
-                <a class="tile" href="surahs.html">
-                    <div class="tile__icon">📖</div>
-                    <div class="tile__title">السور القرآنية</div>
-                    <div class="tile__desc">تلاوات مرتبة من الفاتحة إلى الناس</div>
-                </a>
-
-                <a class="tile" href="clips.html">
-                    <div class="tile__icon">🎧</div>
-                    <div class="tile__title">المقاطع القصيرة</div>
-                    <div class="tile__desc">مقاطع مختارة للخشوع والتدبر</div>
-                </a>
-
-                <a class="tile" href="about.html">
-                    <div class="tile__icon">🌿</div>
-                    <div class="tile__title">نبذة عن القارئ</div>
-                    <div class="tile__desc">رسالة الموقع ونية النشر</div>
-                </a>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- ===== Footer ===== -->
-    <footer class="footer">
-        <div class="container footer__inner">
-            <p class="footer__text">
-                © <span id="year"></span> تلاوات أنس أجلاب — جميع الحقوق محفوظة
-            </p>
-            <p class="footer__subtext">
-                موقع قرآني بسيط يهدف إلى نشر السكينة وذكر الله
-            </p>
-        </div>
-    </footer>
-
-    <!-- JS (الترتيب مهم) -->
-    <script src="assets/js/data.js"></script>
-    <script src="assets/js/main.js"></script>
-
-</body>
-
-</html>
