@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>السور | تلاوات أنس أجلاب</title>
+    <meta name="description" content="تلاوات سور القرآن الكريم مرتبة من الفاتحة إلى الناس مع بحث وتحميل." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+    <a class="skip-link" href="#content">تخطي إلى المحتوى</a>
+
+    <header class="topbar">
+        <div class="container topbar__inner">
+            <div class="brand">
+                <span class="brand__logo" aria-hidden="true">∞</span>
+
+
+                <div class="brand__text">
+                    <strong class="brand__title">تلاوات أنس أجلاب</strong>
+                    <span class="brand__subtitle">السور القرآنية</span>
+                </div>
+            </div>
+
+            <nav class="nav" aria-label="شريط التنقل">
+                <a class="nav__link" href="index.html">الرئيسية</a>
+                <a class="nav__link is-active" href="surahs.html">السور</a>
+                <a class="nav__link" href="clips.html">المقاطع القصيرة</a>
+                <a class="nav__link" href="about.html">نبذة</a>
+                <a class="nav__link" href="contact.html">تواصل</a>
+                <a class="nav__link" href="feedback.html">مكانكم</a>
+                <a class="nav__link" href="support.html">للدعم</a>
+                <a class="nav__link" href="privacy.html">سياسة الخصوصية</a>
+
+                <meta charset="utf-8">
+                <title>تلاوات أنس أجلاب</title>
+                
+                <!-- Google Analytics -->
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-275KLTWM80"></script>
+                <script>
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag() { dataLayer.push(arguments); }
+                    gtag('js', new Date());
+                    gtag('config', 'G-275KLTWM80');
+                </script>
+                
+                <link rel="stylesheet" href="assets/css/style.css">
+
+
+
+            </nav>
+
+            <button class="btn btn--ghost" id="themeToggle" type="button" aria-label="تبديل الوضع الليلي">
+                <span aria-hidden="true">🌙</span>
+                <span class="btn__text">الوضع الليلي</span>
+            </button>
+        </div>
+    </header>
+
+    <main id="content" class="container page" data-page="surahs">
+        <header class="pagehead">
+            <h1 class="pagehead__title">سور القرآن الكريم</h1>
+            <p class="pagehead__subtitle">مرتبة من الفاتحة إلى الناس — ابحث بالاسم أو الرقم.</p>
+
+            <div class="searchbar" role="search">
+                <label class="sr-only" for="surahSearch">بحث السور</label>
+                <input id="surahSearch" class="input" type="search" placeholder="ابحث: الفاتحة، البقرة، 2، 114..."
+                    autocomplete="off" />
+                <button class="btn" type="button" id="clearSurahSearch">مسح</button>
+            </div>
+
+            <div class="hint">
+                <span class="pill pill--soft">مشغل صوت</span>
+                <span class="pill pill--soft">زر تحميل</span>
+                <span class="pill pill--soft">بطاقات</span>
+            </div>
+        </header>
+
+        <section class="section">
+            <div id="surahsGrid" class="grid grid--cards" aria-live="polite">
+                <!-- يُملأ عبر JS -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p class="footer__text">© <span id="year"></span> تلاوات أنس أجلاب</p>
+            <p class="footer__subtext">إن لم تظهر الأصوات، ضع ملفات MP3 داخل assets/audio/surahs.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

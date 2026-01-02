@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>تفاعل المستمعين | تلاوات أنس أجلاب</title>
+    <meta name="description" content="اكتب ما تشاء من خواطر أو رسائل بعد الاستماع." />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <meta charset="utf-8">
+    <title>تلاوات أنس أجلاب</title>
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-275KLTWM80"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-275KLTWM80');
+    </script>
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <a class="skip-link" href="#content">تخطي إلى المحتوى</a>
+
+    <header class="topbar">
+        <div class="container topbar__inner">
+            <div class="brand">
+                <span class="brand__logo" aria-hidden="true">∞</span>
+
+                <div class="brand__text">
+                    <strong class="brand__title">تلاوات أنس أجلاب</strong>
+                    <span class="brand__subtitle">تفاعل المستمعين</span>
+                </div>
+            </div>
+
+            <nav class="nav">
+                <a class="nav__link" href="index.html">الرئيسية</a>
+                <a class="nav__link" href="surahs.html">السور</a>
+                <a class="nav__link" href="clips.html">المقاطع</a>
+                <a class="nav__link" href="about.html">نبذة</a>
+
+                <a class="nav__link" href="contact.html">تواصل</a>
+                <a class="nav__link is-active" href="feedback.html">مكانكم</a>
+                <a class="nav__link" href="support.html">للدعم</a>
+                <a class="nav__link" href="privacy.html">سياسة الخصوصية</a>
+
+
+            </nav>
+
+            <button class="btn btn--ghost" id="themeToggle" type="button">
+                <span aria-hidden="true">🌙</span>
+                <span class="btn__text">الوضع الليلي</span>
+            </button>
+        </div>
+    </header>
+
+    <main id="content" class="container page" data-page="feedback">
+
+        <header class="pagehead">
+            <h1 class="pagehead__title">تفاعل المستمعين</h1>
+            <p class="pagehead__subtitle">
+                اكتب ما تشاء بعد الاستماع، كلمة صادقة أو دعاء أو خاطر.
+            </p>
+        </header>
+
+        <!-- رسالة ترحيبية ثابتة -->
+        <section class="section section--signature">
+            <div class="signature-box">
+                أهلًا وسهلًا بكم في هذا المكان،<br><br>
+        
+                أشكركم من القلب على زيارتكم، وأسأل الله أن يجعل خطاكم مباركة،
+                وأن يكتب لكم الخير حيث كنتم، وأن يكون الله معكم دائمًا في كل أحوالكم.<br><br>
+        
+                هذا الموقع خُصِّص لكم، ليكون مساحة آمنة وهادئة، تستطيعون فيها أن تعبّروا
+                عمّا في قلوبكم، وأن تقولوا ما تشاؤون دون تكلّف أو حرج.
+                وإن كنتم بحاجة إلى مساعدة، أو كلمة، أو توجيه،
+                فأنا رهن إشارتكم، أقدّم ما أستطيع ابتغاء وجه الله.<br><br>
+        
+                كما أودّ أن أشير إلى إمكانية دعم هذا المشروع،
+                حتى أتمكّن — بإذن الله — من نشر السور كاملة بصوتي قبل حلول شهر رمضان المبارك.
+                دعمكم، مهما كان بسيطًا، يساهم في استمرار هذا العمل
+                وخدمته لكم على الوجه الذي يرضي الله.<br><br>
+        
+                جزاكم الله خير الجزاء، وبارك فيكم،<br>
+                وجعل هذا المكان نافعًا لي ولكم.
+            </div>
+        </section>
+
+
+        <!-- نموذج الكتابة -->
+        <section class="section">
+            <div class="card card--pad">
+                <form id="feedbackForm" class="form">
+
+                    <!-- 🆕 الاسم المستعار -->
+                    <div class="form__row">
+                        <label class="label" for="feedbackName">اسم مستعار (اختياري)</label>
+                        <input id="feedbackName" class="input" type="text" placeholder="مثلاً: عبد الله" maxlength="30">
+                    </div>
+
+                    <div class="form__row">
+                        <label class="label" for="feedbackText">رسالتك</label>
+                        <textarea id="feedbackText" class="input input--textarea" placeholder="اكتب هنا..."
+                            required></textarea>
+                    </div>
+
+                    <div class="form__actions">
+                        <button type="submit" class="btn btn--primary">إرسال</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- الرسائل -->
+        <section class="section">
+            <div class="card card--pad">
+                <h2 class="card__title">رسائل المستمعين</h2>
+                <div id="feedbackList" class="feedback-list">
+                    <!-- الرسائل تظهر هنا -->
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p class="footer__text">© <span id="year"></span> تلاوات أنس أجلاب</p>
+            <p class="footer__subtext">الكلمات الطيبة صدقة</p>
+        </div>
+    </footer>
+
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/feedback.js"></script>
+
+</body>
+
+</html>

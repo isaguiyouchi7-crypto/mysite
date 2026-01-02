@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>تسجيل الدخول — أنس أجلاب ♾️</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;600;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <meta charset="utf-8">
+    <title>تلاوات أنس أجلاب</title>
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-275KLTWM80"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-275KLTWM80');
+    </script>
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <main class="section">
+        <div class="container" style="max-width:420px">
+
+            <div class="panel">
+                <h1 style="font-family:var(--font-title);margin-top:0">
+                    أهلاً بك ♾️
+                </h1>
+
+                <p style="color:var(--muted)">
+                    يلزم تسجيل الدخول قبل متابعة القراءة.
+                </p>
+
+                <!-- Google -->
+                <button id="login-google" class="btn primary" style="width:100%">
+                    الدخول بحساب Google
+                </button>
+
+                <div class="hr"></div>
+
+                <!-- Guest -->
+                <div class="field">
+                    <input id="guest-name" type="text" placeholder="اكتب اسمك (للتعليق)"
+                        style="padding:12px;border-radius:12px;border:1px solid var(--border)">
+                    <button id="login-guest" class="btn" style="width:100%">
+                        الدخول كزائر
+                    </button>
+                </div>
+
+                <p id="login-error" style="color:#b33;display:none;margin-top:10px"></p>
+            </div>
+
+        </div>
+    </main>
+
+    <script type="module" src="js/firebase.js"></script>
+    <script type="module" src="js/login.js"></script>
+
+
+
+</body>
+
+</html>
